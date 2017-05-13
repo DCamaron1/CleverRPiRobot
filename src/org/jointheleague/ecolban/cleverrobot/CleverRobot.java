@@ -39,9 +39,9 @@ public class CleverRobot extends IRobotAdapter {
 		*/
 		
 		driveDirect(100,100);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		driveDirect(-50,50);
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		return true;
 	}
 
