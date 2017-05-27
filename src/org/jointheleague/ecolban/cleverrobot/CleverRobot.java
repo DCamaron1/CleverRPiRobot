@@ -38,10 +38,13 @@ public class CleverRobot extends IRobotAdapter {
 		System.out.println("CENTER SONAR: " + sonar.readSonar("center"));
 		*/
 		
-		driveDirect(100,100);
-		Thread.sleep(3000);
-		driveDirect(-50,50);
-		Thread.sleep(3000);
+		driveDirect(50,100);
+		readSensors(100);
+		if (isBumpLeft()){
+			driveDirect(-100,-200);
+			Thread.sleep(1000);
+		}
+		
 		return true;
 	}
 
